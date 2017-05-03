@@ -1,0 +1,22 @@
+.img-circle {
+    width: 25%;
+    height: 180px;
+    border-radius: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.profile{
+ background-color: #5d615d;
+}
+.profile-image-data{
+	width: 30%;
+    height: 200px;
+    background-color: hsla(338, 23%, 49%, 0.29);
+    border-top-right-radius: 50px;
+    float: left;
+    margin: 10px;
+}
+.container-fluid{
+	background-color:rgba(12, 140, 169, 0.5);
+}
+
