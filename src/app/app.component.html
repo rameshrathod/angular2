@@ -1,3 +1,37 @@
-<h1>
-  {{title}}
-</h1>
+
+<app-header></app-header>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <app-leftnav></app-leftnav>
+    <div class="col-sm-8 text-left"> 
+	      <app-welcome-note></app-welcome-note>
+	      <hr>
+	      <h3>Test</h3>
+	      <p>Lorem ipsum...</p>
+	      <h1>
+	  		{{title}}
+			</h1>
+			<alert type="info">ng2-bootstrap hello world!</alert>
+			<alert type="success">hello</alert>	
+			<nav>
+    <a routerLink="/app-welcome-note" routerLinkActive="active">app-welcome-note</a>
+    <a routerLink="/app-profiles" routerLinkActive="inactive">app-profiles</a>
+  </nav>
+    </div>
+    <app-rightnav></app-rightnav>
+    <h1>Angular Router</h1>
+    
+  
+  <router-outlet></router-outlet>
+
+
+  </div>
+</div>
+
+<div class="profile">
+  
+  	<app-profiles></app-profiles>
+
+  </div>
+<app-footer></app-footer>
