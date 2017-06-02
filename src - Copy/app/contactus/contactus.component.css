@@ -1,0 +1,54 @@
+body{
+  width:80% !important;
+  height:100% !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+
+h1,h2,h3 {
+  margin:0 0 15px 0;
+  font-family: 'Patua One', cursive;
+  text-transform: uppercase;
+  letter-spacing:1px;
+}
+
+p{
+  margin:0 0 25px;
+  font-size:18px;
+  line-height:1.6em;
+}
+a{
+  color:#26a5d3;
+}
+a:hover,a:focus{
+  text-decoration:none;
+  color:#26a5d3;
+}
+
+#contact{
+    background: #333333;
+    color: #f4f4f4;
+    padding-bottom: 10px;
+    height: 640px;
+    padding-top: 20px;
+    display: block;
+    margin: -30px 0px 15px 0px !important;
+
+}
+
+textarea.form-control{
+    height:100px;
+}
+
+p.social{padding-top:15px; text-align:center;
+     display: inline-flex;}
+.social a{color:#FFF; font-size:18px !important}
+.social img.fa{margin: 3px;height:36px; width:36px; text-align:center; line-height:36px; background:#069; border-radius:50%}
+.social img.fa.fa-facebook{background:#43609C}
+.social img.fa.fa-twitter{background:#2CA8D2}
+.social img.fa.fa-linkedin{background:#428099}
+.social img.fa.fa-google-plus{background:#ce4d39}
+.form-group{
+  margin-left:5px;
+  margin-right: 5px;
+}
