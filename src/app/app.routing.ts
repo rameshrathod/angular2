@@ -10,12 +10,16 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
 import { LinkdemoComponent } from './linkdemo/linkdemo.component';
+
+import { AuthGuard } from './_guards/auth.guard';
 
 
 
 const appRoutes: Routes = [
- { path: '', redirectTo: '/home', pathMatch: 'full' },
+ //{ path: '', redirectTo: '/home', pathMatch: 'full' },
+ { path: '', component: UserComponent, canActivate: [AuthGuard] },
   { path: 'app-welcome-note', component: WelcomeNoteComponent },
   { path: 'home', component: HomeComponent },
   { path: 'about-us', component: AboutusComponent },
