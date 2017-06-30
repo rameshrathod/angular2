@@ -1,0 +1,49 @@
+/*Style the DIV*/
+.wel-msg{
+	padding: 10px;
+    margin: 5px;
+      msg-shadow: 3px 3px 15px #666;
+  border-color:#C76C0C;
+  background: #6f6969;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #8f91b3;
+}
+/*Fade all the DIV when user hovers on any div*/
+.wel-msg:hover {
+  zoom: 1;
+  filter: alpha(opacity=45);
+  opacity: 0.45;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 5px #888111;
+}
+
+/*Fade out the particular DIV when user hover on that DIV*/
+.wel-msg:hover{
+  msg-shadow: 3px 3px 15px #666;
+  border-color:#C76C0C;
+  background: gray;
+  color: #fff;
+  cursor: pointer;
+  /*Opacity*/
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

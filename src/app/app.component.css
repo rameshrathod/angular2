@@ -1,0 +1,4 @@
+/* Set gray background color and 100% height */
+.row{height: 450px;
+display: inherit;
+}

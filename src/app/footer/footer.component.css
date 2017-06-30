@@ -1,0 +1,21 @@
+/* Set black background color, white text and some padding */
+footer{
+      background-color: black;
+      color: white;
+      padding: 15px;
+      bottom: 0px;
+      display: block;
+
+    }
+footer p{padding:10px; color:#fff}
+.dont-remove{color:#fff !important; text-decoration:none !important; font-weight:700}
+.rights{display:inline-block; border-top:solid 1px rgba(103, 58, 183, 0.3)}
+
+.thumbnail p.social{padding-top:15px; text-align:center}
+.social a{color:#FFF; font-size:18px !important}
+.social img.fa{height:36px; width:36px; text-align:center; line-height:36px; background:#069; border-radius:50%}
+.social img.fa.fa-facebook{background:#43609C}
+.social img.fa.fa-twitter{background:#2CA8D2}
+.social img.fa.fa-linkedin{background:#428099}
+.social img.fa.fa-google-plus{background:#ce4d39}
+

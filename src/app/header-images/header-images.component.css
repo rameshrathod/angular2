@@ -1,0 +1,8 @@
+.images{
+	background-color: white;
+}
+
+.logo-image>img{
+    width:100%; 
+    display:block;
+}

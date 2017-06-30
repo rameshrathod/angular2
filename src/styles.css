@@ -1,0 +1,49 @@
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+body{
+	background-color:red;
+}
+.gif {
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.profile{
+	background-color: rgb(212, 229, 212);
+}
+
+
+.container-fluid{
+ display: inherit
+}
+
+.brk {height:4px; 
+	border-radius:4px;
+	background:#d9534f; 
+	margin:25px auto;
+	display:block; 
+	width:120px;
+	
+}
+.b{
+	background-color: brown !important;
+}
+.col-sm-8 {
+    padding: 10px 10px 10px 20px !important;
+    margin: -30px 0px 10px -15px !important;
+     height: 640px; 
+     overflow-y: scroll;
+     background-color: white;
+	 border-style: solid;
+    border-color:black;
+
+	 
+}
