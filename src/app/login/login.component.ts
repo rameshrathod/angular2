@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
 
  model: any = {};
  returnUrl: string;
+ returnSuccess:string="/user"
 
  constructor(
           private route: ActivatedRoute,
@@ -45,7 +46,9 @@ Login(){
 	this.authenticateService.login(this.model.username, this.model.password)
             .subscribe(
                 data => {
-                    this.router.navigate([this.returnUrl]);
+                this.returnSuccess = this.route.snapshot.queryParams['returnSuccess'] || '/user';
+                    this.alertService.success("Login successful");
+                    this.router.navigate([this.returnSuccess]);
                 },
                 error => {
                     this.alertService.error(error);

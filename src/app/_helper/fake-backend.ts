@@ -1,8 +1,10 @@
 import { Http, BaseRequestOptions, Response, ResponseOptions, RequestMethod } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
+import { Router, ActivatedRoute } from '@angular/router';
 
 export let fakeBackendProvider = {
     // use fake backend in place of Http service for backend-less development
+
     provide: Http,
     useFactory: (backend: MockBackend, options: BaseRequestOptions) => {
         // array in local storage for registered users
@@ -18,17 +20,12 @@ export let fakeBackendProvider = {
                     // get parameters from post request
 
                     let params = JSON.parse(connection.request.getBody());
-
-                    console.log(params);
-                    alert("welcome");
-
                     // find if any user matches login credentials
                     let filteredUsers = users.filter(user => {
                         return user.username === params.username && user.password === params.password;
                     });
 
                     if (filteredUsers.length) {
-                    alert("i am in ");
                         // if login details are valid return 200 OK with user details and fake jwt token
                         let user = filteredUsers[0];
                         connection.mockRespond(new Response(new ResponseOptions({

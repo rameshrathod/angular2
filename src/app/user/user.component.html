@@ -1,3 +1,6 @@
+<div style="display:none">
+<app-login (doIt)="redirectMe($event)"></app-login>
+</div>
 <div class="col-md-6 col-md-offset-3" ><!-- *ngIf="log_in"-->
     <h1>Hi {{currentUser.firstName}}!</h1>
     <p>You're logged in with Angular 2!!</p>
